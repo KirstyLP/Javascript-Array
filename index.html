@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>JavaScript Array Reflection</title>
+</head>
+<body>
+    <main>
+        <section id="input">
+            <div class="input-content">
+                <h1>Picture Finder</h1>
+                <div id="image-container">
+                    <img id="picture" src="/img/placeholder.jpg" alt="A picture chosen at random from the Lorem Picsum website">
+                </div>
+                <p>Enter an email address to build an image collection</p>
+                <form id="form" novalidate>
+                    <button class="btn" type="button" onclick="newImage()">New image</button>
+                    <input type="email" id="email" name="email" placeholder="Enter an email address">
+                    <input class="btn" type="submit" value="Add image">
+                </form>
+                <div id="msg-box"></div>
+            </div>
+        </section>
+        <section id="output"></section>
+        <!-- <div class="test-data">
+            <ul>
+                <li><h3>first@email.com</h3>
+                    <ul>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                    </ul>
+                </li>
+                <li><h3>second@email.com</h3>
+                    <ul>
+                        <li>
+                            <li><img src="https://picsum.photos/500" alt=""></li>
+                            <li><img src="https://picsum.photos/500" alt=""></li>
+                            <li><img src="https://picsum.photos/500" alt=""></li>
+                        </li>
+                    </ul>
+                </li>
+                <li><h3>third@email.com</h3>
+                    <ul>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                        <li><img src="https://picsum.photos/500" alt=""></li>
+                    </ul>
+                </li>
+            </ul>
+        </div> -->
+    </main>
+    <script src="js/duds.js"></script>
+    <script src="js/rando.js"></script>
+    <script src="js/image-resizer.js"></script>
+</body>
+</html>

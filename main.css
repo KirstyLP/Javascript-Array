@@ -1,0 +1,211 @@
+body {
+    background: orange;
+    font-family: "Rubik", sans-serif;
+  }
+  
+  main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-family: "Bangers", cursive;
+    font-weight: 400;
+    font-size: 3em;
+    margin: 0.2em 0;
+  }
+  
+  h3 {
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  ul {
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    background: wheat;
+  }
+  
+  .btn {
+    background: cornflowerblue;
+    cursor: pointer;
+  }
+  .btn:hover {
+    filter: brightness(85%);
+  }
+  
+  #image-container {
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    min-height: 100px;
+    max-width: 400px;
+  }
+  
+  #picture {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto 10px;
+    justify-content: center;
+  }
+  form #email {
+    background: wheat;
+  }
+  @media screen and (min-width: 992px) {
+    form {
+      width: auto;
+    }
+  }
+  form > * {
+    padding: 8px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 18px;
+  }
+  
+  #msg-box {
+    height: 22px;
+  }
+  
+  .input-content {
+    padding-top: 0.2em;
+  }
+  
+  .test-data,
+  #output {
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .test-data > ul,
+  #output > ul {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .test-data > ul > li,
+  #output > ul > li {
+    border: 2px solid black;
+    border-radius: 18px;
+    margin: 10px 0;
+  }
+  .test-data > ul > li > ul,
+  #output > ul > li > ul {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+  }
+  .test-data > ul > li > ul > li,
+  #output > ul > li > ul > li {
+    max-width: 40%;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  @media screen and (min-width: 576px) {
+    .test-data > ul > li > ul > li,
+  #output > ul > li > ul > li {
+      max-width: 30%;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .test-data > ul > li > ul > li,
+  #output > ul > li > ul > li {
+      max-width: 20%;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .test-data > ul > li > ul > li,
+  #output > ul > li > ul > li {
+      max-width: 18%;
+    }
+  }
+  .test-data > ul > li > ul > li > img,
+  #output > ul > li > ul > li > img {
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 5%;
+  }
+  
+  .current {
+    order: 1;
+  }
+  
+  @media screen and (max-width: 575px) {
+    form {
+      justify-content: space-between;
+    }
+  
+    #email {
+      order: -1;
+      width: 100%;
+    }
+  
+    #msg-box {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    main {
+      flex-direction: row;
+      justify-content: space-evenly;
+      height: 100vh;
+    }
+  
+    #input {
+      max-width: 100%;
+      width: 500px;
+      margin: 0 auto;
+      overflow-y: hidden;
+    }
+  
+    .test-data,
+  #output {
+      width: calc(100vw - 500px);
+      overflow-y: scroll;
+    }
+    .test-data > ul,
+  #output > ul {
+      margin: 20px;
+    }
+  }
+  @media screen and (min-width: 992px) and (max-height: 500px) {
+    .input-content {
+      font-size: 0.75em;
+    }
+  
+    h1 {
+      font-weight: 300;
+      font-size: 2em;
+    }
+  }
+  @media screen and (max-width: 276px) {
+    h1 {
+      font-weight: 300;
+      font-size: 2em;
+    }
+  
+    h3 {
+      font-size: 0.8em;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  
+    #output > ul > li > ul > li {
+      max-width: 85%;
+    }
+  }
